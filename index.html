@@ -3,9 +3,147 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <meta name="keywords" content="barbershop, Brorodinski, барбершоп, Бородинский, baxter of california, mr natty, suavecito, malin+goetz, стрижка, стрижка бороды, накрутка усов">
+    <meta name="description" content="барбершоп &laquo;Borodinski&raquo; - место где вы найдете, лучшие средства для ухода, бритвенные принадлежности и аксессуары.">
   </head>
-  <body>
+  <body class="page">
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <a class="page-header__logo">
+          <img class="page-header__img" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип барбершопа &laquo;Borodinski&raquo;">
+        </a>
+        <ul class="page-nav page-nav--main">
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="info.html">Информация</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="news.html">Новости</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="price.html">Прайс-лист</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <ul class="page-nav page-nav--user">
+          <li class="page-nav__link login-link">
+            <a class="page-nav__link" href="">Вход</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
 
+      <h1 class="visually-hidden">Барбершоп &laquo;Borodinski&raquo;</h1>
+
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__item-headline">Быстро</h3>
+            <p class="features__item-info">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-headline">Круто</h3>
+            <p class="features__item-info">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-headline">Дорого</h3>
+            <p class="features__item-info">Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="news">
+        <h2 class="news__headline">Новости</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <p class="news__item-info">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+            <time class="news__item-time" datetime="2016-01-11">11 января</time>
+          </li>
+          <li class="news__item">
+            <p class="news__item-info">В нашей команде пополнение, Борис "бритва" Стригунец, обладатель множетва титулов и наград пополнил наши стройные ряды</p>
+            <time class="news__item-time" datetime="2016-01-18">18 января</time>
+          </li>
+        </ul>
+        <a class="button" href="news.html">Все новости</a>
+      </section>
+
+      <section class="gallery">
+        <h2 class="gallery__headline">Фотогалерея</h2>
+        <figure class="gallery__content">
+          <a class="gallery__content-link" href="#">
+            <img class="gallery__content-img" src="http://placehold.it/150x100" width="150" height="100" alt="Интерьер">
+          </a>
+        </figure>
+        <span class="button gallery__button gallery__button-back">Назад</span>
+        <span class="button gallery__button gallery__button-next">Вперед</span>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__headline">Контактная информация</h2>
+        <p class="contacts__info">
+          Барбершоп &laquo;Borodinski&raquo;<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          Телефон: +7 (812) 666-02-66
+        </p>
+        <p class="contacts__info">
+          Время работы:<br>
+          пн-пт: с 10:00 до 22:00<br>
+          сб-вс: с 10:00 до 19:00
+        </p>
+        <a class="button contacts__button" href="map.html">Как проехать</a>
+        <a class="button contacts__button" href="contacts.html">Обратная связь</a>
+      </section>
+
+      <section class="appointment">
+        <h2 class="appointment__headline">Записаться</h2>
+        <p class="appointment__info">Укажите желаемую дату и вермя и мы свяжемся с вами для подтверждения брони</p>
+        <!-- Место для формы -->
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__contacts">
+        Барбершоп &laquo;Borodinski&raquo;<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a class="page-footer__link" href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </p>
+      <div class="page-footer__social">
+        <b class="page-footer__bold-text">Давайте дружить!</b>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-button" href="#">Вконтакте</a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-button" href="#">Фейсбук</a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-button" href="#">Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+      <p class="page-footer__copyright">
+        <b class="page-footer__bold-text">Разработано:</b>
+        <a class="page-footer__button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
+
+    <section class="modal modal-login">
+      <h2 class="modal-login__headline">Личный кабинет</h2>
+      <p class="modal-login__info">Введите пожалуйста свой логин и пароль</p>
+      <!-- Место для формы -->
+      <span class="modal-close"></span>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <span class="modal-close"></span>
+    </section>
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
 
   </body>
