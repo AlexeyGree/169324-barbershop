@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="page-header__nav">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__img" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип барбершопа &laquo;Borodinski&raquo;">
+          <img class="page-header__img" src="http://placehold.it/111x24" width="111" height="24" alt="Логотип барбершопа &laquo;Borodinski&raquo;">
         </a>
         <ul class="page-nav page-nav--main">
           <li class="page-nav__item">
@@ -22,7 +22,7 @@
           <li class="page-nav__item">
             <a class="page-nav__link" href="price.html">Прайс-лист</a>
           </li>
-          <li class="page-nav__item">
+          <li class="page-nav__item page-nav__currrent">
             <a class="page-nav__link" href="catalog.html">Магазин</a>
           </li>
           <li class="page-nav__item">
@@ -37,174 +37,149 @@
       </nav>
     </header>
     <main class="container">
-      <header class="content-header">
-        <h1 class="content-header__headline">Средства для ухода</h1>
-        <nav class="content-header__breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="shop.html">Магазин</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link">Средства для ухода</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <h1 class="content-header__headline">Средства для ухода</h1>
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="catalog.html">Магазин</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__current">Средства для ухода</a>
+        </li>
+      </ul>
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
-        <section class="manufacturers-filter">
-          <h3 class="manufacturers-filter__headline">Производители:</h3>
-          <ul class="manufacturers-filter__list">
-            <li class="manufacturers-filter__item">
-              <a class="manufacturers-filter__link" href="#">Baxter of California</a>
-            </li>
-            <li class="manufacturers-filter__item">
-              <a class="manufacturers-filter__link" href="#">Mr Natty</a>
-            </li>
-            <li class="manufacturers-filter__item">
-              <a class="manufacturers-filter__link" href="#">Suavecito</a>
-            </li>
-            <li class="manufacturers-filter__item">
-              <a class="manufacturers-filter__link" href="#">Malin+Goetz</a>
-            </li>
-            <li class="manufacturers-filter__item">
-              <a class="manufacturers-filter__link" href="#">Murray's</a>
-            </li>
-            <li class="manufacturers-filter__item">
-              <a class="manufacturers-filter__link" href="#">American crew</a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="product-groups">
-          <h3 class="product-groups__headline">Группы товаров:</h3>
-          <ul class="product-groups__list">
-            <li class="product-groups__item">
-              <a class="product-groups__link" href="#">Бритвенные принадлежности</a>
-            </li>
-            <li class="product-groups__item">
-              <a class="product-groups__link" href="#">Средства для ухода</a>
-            </li>
-            <li class="product-groups__item">
-              <a class="product-groups__link" href="#">Аксессуары</a>
-            </li>
-          </ul>
-        </section>
-
-        <a class="button filters__button" href="#">Показать</a>
+        <!-- Место для формы-->
       </section>
 
       <section class="products">
         <h2 class="visually-hidden">Товары</h2>
         <ul class="products__list">
           <li class="products__card">
-            <figure class="products__card-pic">
+            <h3 class="products__card-headline">
               <a class="products__card-link" href="catalog-item.html">
-                <img class="products__card-img" src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий &laquo;Baxter of California&raquo;">
+                <span class="products__card-category">Набор для путешествий</span>
+                <span class="products__card-title">&laquo;Baxter of California&raquo;</span>
               </a>
-              <figcaption class="products__card-description">Набор для путешествий &laquo;<span>Baxter of California<span></span>&raquo;</figcaption>
-            </figure>
-            <section class="price-block">
-              <h3 class="visually-hidden">Цена товара</h3>
-              <p class="products__card-price card-price">2 900 &#8381;</p>
-              <a class="button products__card-button">Купить</a>
-            </section>
+            </h3>
+            <p class="products__card-image">
+              <a class="products__card-link-img" href="catalog-item.html">
+                <img class="products__card-img" src="http://placehold.it/220x165" width="220" height="165" alt="Набор для путешествий &laquo;Baxter of California&raquo;">
+              </a>
+            </p>
+            <p class="products__card-price">
+              <b class="products__card-cost card-price">2 900 &#8381;</b>
+              <a class="products__card-button button">Купить</a>
+            </p>
           </li>
 
           <li class="products__card">
-            <figure class="products__card-pic">
-              <a class="products__card-link" href="#">
-                <img class="products__card-img" src="http://placehold.it/150x100" width="150" height="100" alt="Увлажняющий кондиционер &laquo;Baxter of California&raquo;">
+            <h3 class="products__card-headline">
+              <a class="products__card-link" href="catalog-item.html">
+                <span class="products__card-category">Увлажняющий кондиционер</span>
+                <span class="products__card-title">&laquo;Baxter of California&raquo;</span>
               </a>
-              <figcaption class="products__card-description">Увлажняющий кондиционер &laquo;<span>Baxter of California<span></span>&raquo;</figcaption>
-            </figure>
-            <section class="price-block">
-              <h3 class="visually-hidden">Цена товара</h3>
-              <p class="products__card-price card-price">750 &#8381;</p>
-              <a class="button products__card-button">Купить</a>
-            </section>
+            </h3>
+            <p class="products__card-image">
+              <a class="products__card-link-img" href="catalog-item.html">
+                <img class="products__card-img" src="http://placehold.it/220x165" width="220" height="165" alt="Увлажняющий кондиционер &laquo;Baxter of California&raquo;">
+              </a>
+            </p>
+            <p class="products__card-price">
+              <b class="products__card-cost card-price">750 &#8381;</b>
+              <a class="products__card-button button">Купить</a>
+            </p>
           </li>
 
           <li class="products__card">
-            <figure class="products__card-pic">
-              <a class="products__card-link" href="#">
-                <img class="products__card-img" src="http://placehold.it/150x100" width="150" height="100" alt="Гель для волос &laquo;Suavecito&raquo;">
+            <h3 class="products__card-headline">
+              <a class="products__card-link" href="catalog-item.html">
+                <span class="products__card-category">Гель для волос</span>
+                <span class="products__card-title">&laquo;Suavecito&raquo;</span>
               </a>
-              <figcaption class="products__card-description">Гель для волос &laquo;<span>Suavecito<span></span>&raquo;</figcaption>
-            </figure>
-            <section class="price-block">
-              <h3 class="visually-hidden">Цена товара</h3>
-              <p class="products__card-price card-price">290 &#8381;</p>
-              <a class="button products__card-button">Купить</a>
-            </section>
+            </h3>
+            <p class="products__card-image">
+              <a class="products__card-link-img" href="catalog-item.html">
+                <img class="products__card-img" src="http://placehold.it/220x165" width="220" height="165" alt="Гель для волос &laquo;Suavecito&raquo;">
+              </a>
+            </p>
+            <p class="products__card-price">
+              <b class="products__card-cost card-price">290 &#8381;</b>
+              <a class="products__card-button button">Купить</a>
+            </p>
           </li>
 
           <li class="products__card">
-            <figure class="products__card-pic">
-              <a class="products__card-link" href="#">
-                <img class="products__card-img" src="http://placehold.it/150x100" width="150" height="100" alt="Глина для укладки волос &laquo;American crew&raquo;">
+            <h3 class="products__card-headline">
+              <a class="products__card-link" href="catalog-item.html">
+                <span class="products__card-category">Глина для укладки волос</span>
+                <span class="products__card-title">&laquo;American crew&raquo;</span>
               </a>
-              <figcaption class="products__card-description">Глина для укладки волос &laquo;<span>American crew<span></span>&raquo;</figcaption>
-            </figure>
-            <section class="price-block">
-              <h3 class="visually-hidden">Цена товара</h3>
-              <p class="products__card-price card-price">500 &#8381;</p>
-              <a class="button products__card-button">Купить</a>
-            </section>
+            </h3>
+            <p class="products__card-image">
+              <a class="products__card-link-img" href="catalog-item.html">
+                <img class="products__card-img" src="http://placehold.it/220x165" width="220" height="165" alt="Глина для укладки волос &laquo;American crew&raquo;">
+              </a>
+            </p>
+            <p class="products__card-price">
+              <b class="products__card-cost card-price">500 &#8381;</b>
+              <a class="products__card-button button">Купить</a>
+            </p>
           </li>
 
           <li class="products__card">
-            <figure class="products__card-pic">
-              <a class="products__card-link" href="#">
-                <img class="products__card-img" src="http://placehold.it/150x100" width="150" height="100" alt="Гель для волос &laquo;American crew&raquo;">
+            <h3 class="products__card-headline">
+              <a class="products__card-link" href="catalog-item.html">
+                <span class="products__card-category">Гель для волос</span>
+                <span class="products__card-title">&laquo;American crew&raquo;</span>
               </a>
-              <figcaption class="products__card-description">Гель для волос &laquo;<span>American crew<span></span>&raquo;</figcaption>
-            </figure>
-            <section class="price-block">
-              <h3 class="visually-hidden">Цена товара</h3>
-              <p class="products__card-price card-price">300 &#8381;</p>
-              <a class="button products__card-button">Купить</a>
-            </section>
+            </h3>
+            <p class="products__card-image">
+              <a class="products__card-link-img" href="catalog-item.html">
+                <img class="products__card-img" src="http://placehold.it/220x165" width="220" height="165" alt="Гель для волос &laquo;American crew&raquo;">
+              </a>
+            </p>
+            <p class="products__card-price">
+              <b class="products__card-cost card-price">300 &#8381;</b>
+              <a class="products__card-button button">Купить</a>
+            </p>
           </li>
 
           <li class="products__card">
-            <figure class="products__card-pic">
-              <a class="products__card-link" href="#">
-                <img class="products__card-img" src="http://placehold.it/150x100" width="150" height="100" alt="Набор для бритья &laquo;Baxter of California&raquo;">
+            <h3 class="products__card-headline">
+              <a class="products__card-link" href="catalog-item.html">
+                <span class="products__card-category">Набор для бритья</span>
+                <span class="products__card-title">&laquo;Baxter of California&raquo;</span>
               </a>
-              <figcaption class="products__card-description">Набор для бритья &laquo;<span>Baxter of California<span></span>&raquo;</figcaption>
-            </figure>
-            <section class="price-block">
-              <h3 class="visually-hidden">Цена товара</h3>
-              <p class="products__card-price card-price">3 900 &#8381;</p>
-              <a class="button products__card-button">Купить</a>
-            </section>
+            </h3>
+            <p class="products__card-image">
+              <a class="products__card-link-img" href="catalog-item.html">
+                <img class="products__card-img" src="http://placehold.it/220x165" width="220" height="165" alt="Набор для бритья &laquo;Baxter of California&raquo;">
+              </a>
+            </p>
+            <p class="products__card-price">
+              <b class="products__card-cost card-price">2 900 &#8381;</b>
+              <a class="products__card-button button">Купить</a>
+            </p>
           </li>
         </ul>
-      </section>
-
-      <section class="product-pages">
-        <h2 class="product-pages__headline">Страницы товаров</h2>
-        <nav class="product-pages__nav">
-          <ol class="product-pages__list">
-            <li class="product-pages__item">
-              <a class="product-pages__link" href="#">1</a>
-            </li>
-            <li class="product-pages__item">
-              <a class="product-pages__link" href="#">2</a>
-            </li>
-            <li class="product-pages__item">
-              <a class="product-pages__link" href="#">3</a>
-            </li>
-            <li class="product-pages__item">
-              <a class="product-pages__link" href="#">4</a>
-            </li>
-          </ol>
-        </nav>
+        <ul class="products__pagination">
+          <li class="products__pagination__item">
+            <a class="products__pagination__link" href="#">1</a>
+          </li>
+          <li class="products__pagination__item">
+            <a class="products__pagination__link pagination__link-current" href="#">2</a>
+          </li>
+          <li class="products__pagination__item">
+            <a class="products__pagination__link" href="#">3</a>
+          </li>
+          <li class="products__pagination__item">
+            <a class="products__pagination__link" href="#">4</a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="page-footer">
