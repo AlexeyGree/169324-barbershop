@@ -9,7 +9,7 @@
   <body class="page">
     <header class="page-header">
       <nav class="page-header__nav">
-        <a class="page-header__logo">
+        <a class="page-header__logo" aria-label="Логотип">
           <img class="page-header__img" src="img/index-logo.svg" width="368" height="204" alt="Логотип барбершопа &laquo;Borodinski&raquo;">
         </a>
         <ul class="page-nav page-nav--main">
@@ -31,7 +31,7 @@
         </ul>
         <ul class="page-nav page-nav--user">
           <li class="page-nav__link login-link">
-            <a class="page-nav__link" href="">Вход</a>
+            <a class="page-nav__link" href="login.html">Вход</a>
           </li>
         </ul>
       </nav>
@@ -70,18 +70,18 @@
             <time class="news__item-time" datetime="2016-01-18">18 января</time>
           </li>
         </ul>
-        <a class="button" href="news.html">Все новости</a>
+        <a class="button news-button" href="news.html">Все новости</a>
       </section>
 
       <section class="gallery">
         <h2 class="gallery__headline">Фотогалерея</h2>
         <figure class="gallery__content">
-          <a class="gallery__content-link" href="#">
+          <a class="gallery__content-link" href="gallery.html" aria-label="Фото галерея">
             <img class="gallery__content-img" src="img/gallery-photo.jpg" width="286" height="164" alt="Интерьер">
           </a>
         </figure>
-        <span class="button gallery__button gallery__button-back">Назад</span>
-        <span class="button gallery__button gallery__button-next">Вперед</span>
+        <button class="button gallery__button gallery__button-back">Назад</button>
+        <button class="button gallery__button gallery__button-next">Вперед</button>
       </section>
 
       <section class="contacts">
@@ -89,7 +89,7 @@
         <p class="contacts__info">
           Барбершоп &laquo;Borodinski&raquo;<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          Телефон: +7 (812) 666-02-66
+          Телефон: <a class="page-footer__phone-link" href="tel:+78126660266" aria-label="Позвонить нам">+7 (812) 666-02-66</a>
         </p>
         <p class="contacts__info">
           Время работы:<br>
@@ -103,7 +103,25 @@
       <section class="appointment">
         <h2 class="appointment__headline">Записаться</h2>
         <p class="appointment__info">Укажите желаемую дату и вермя и мы свяжемся с вами для подтверждения брони</p>
-        <!-- Место для формы -->
+        <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment__form-paragraph">
+            <label class="appointment__form-label" for="appointment-date">Дата</label>
+            <input class="appointment__form-input" type="date" name="date-for-appointment" id="appointment-date" placeholder="08.10.2017">
+          </p>
+          <p class="appointment__form-paragraph">
+            <label class="appointment__form-label" for="appointment-time">Время</label>
+            <input class="appointment__form-input" type="time" name="time-for-appointment" id="appointment-time" placeholder="10:00">
+          </p>
+          <p class="appointment__form-paragraph">
+            <label class="appointment__form-label" for="appointment-name">Ваше имя</label>
+            <input class="appointment__form-input" type="text" name="name-for-appointment" id="appointment-name" placeholder="Борода">
+          </p>
+          <p class="appointment__form-paragraph">
+            <label class="appointment__form-label" for="appointment-phone">Телефон</label>
+            <input class="appointment__form-input" type="tel" name="phone-for-appointment" id="appointment-phone" placeholder="+7 123 456-78-90">
+          </p>
+          <button class="appointment__form-button" type="submit">Отправить</button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -111,40 +129,62 @@
         Барбершоп &laquo;Borodinski&raquo;<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
         <a class="page-footer__link" href="map.html">Как нас найти?</a><br>
-        Телефон: +7 (812) 666-02-66
+        Телефон: <a class="page-footer__phone-link" href="tel:+78126660266" aria-label="Позвонить нам">+7 (812) 666-02-66</a>
       </p>
       <div class="page-footer__social">
         <b class="page-footer__bold-text">Давайте дружить!</b>
         <ul class="page-footer__social-list">
           <li class="page-footer__social-item">
-            <a class="page-footer__social-button" href="#">Вконтакте</a>
+            <a class="page-footer__social-button" href="https://vk.com" aria-label="Вконтакте" target="_blank"></a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__social-button" href="#">Фейсбук</a>
+            <a class="page-footer__social-button" href="https://facebook.com" aria-label="Фейсбук" target="_blank"></a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__social-button" href="#">Инстаграм</a>
+            <a class="page-footer__social-button" href="https://instagram.com" aria-label="Инстаграм" target="_blank"></a>
           </li>
         </ul>
       </div>
       <p class="page-footer__copyright">
         <b class="page-footer__bold-text">Разработано:</b>
-        <a class="page-footer__button" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="page-footer__button" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
       </p>
     </footer>
 
     <section class="modal modal-login">
       <h2 class="modal-login__headline">Личный кабинет</h2>
       <p class="modal-login__info">Введите пожалуйста свой логин и пароль</p>
-      <!-- Место для формы -->
-      <span class="modal-close"></span>
+      <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-login__form-paragraph">
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="modal-login__form-input" type="text" name="login" id="user-login" placeholder="Логин">
+        </p>
+        <p class="modal-login__form-paragraph">
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="modal-login__form-input" type="password" name="login" id="user-password" placeholder="Пароль">
+        </p>
+        <p class="modal-login__form-paragraph">
+          <label class="modal-login__form-label" for="remember-me">
+            <input class="visually-hidden" type="checkbox" name="remember" id="remember-me" checked>
+            <span class="modal-login__form-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="modal-login__form-restore" href="restorepass.html" target="_blank">Я забыл пароль!</a>
+        </p>
+        <button class="modal-login__form-submit" type="submit">Войти</button>
+      </form>
+      <button class="modal-close"></button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close"></span>
+      <a class="modal-map__link" href="https://yandex.ru/maps" aria-label="Яндекс карты" target="_blank">
+        <img class="modal-map__img" src="img/map.jpg" width="766" height="560" alt="Карта">
+      </a>
+      <button class="modal-close"></button>
     </section>
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+
+    <p class="visibility-hidden">Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
 
   </body>
 </html>
