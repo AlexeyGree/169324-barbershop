@@ -106,11 +106,11 @@
         <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
           <p class="appointment__form-paragraph">
             <label class="appointment__form-label" for="appointment-date">Дата</label>
-            <input class="appointment__form-input" type="date" name="date-for-appointment" id="appointment-date" placeholder="08.10.2017">
+            <input class="appointment__form-input" type="text" name="date-for-appointment" id="appointment-date" placeholder="08.10.2017">
           </p>
           <p class="appointment__form-paragraph">
             <label class="appointment__form-label" for="appointment-time">Время</label>
-            <input class="appointment__form-input" type="time" name="time-for-appointment" id="appointment-time" placeholder="10:00">
+            <input class="appointment__form-input" type="text" name="time-for-appointment" id="appointment-time" placeholder="10:00">
           </p>
           <p class="appointment__form-paragraph">
             <label class="appointment__form-label" for="appointment-name">Ваше имя</label>
@@ -120,7 +120,7 @@
             <label class="appointment__form-label" for="appointment-phone">Телефон</label>
             <input class="appointment__form-input" type="tel" name="phone-for-appointment" id="appointment-phone" placeholder="+7 123 456-78-90">
           </p>
-          <button class="appointment__form-button" type="submit">Отправить</button>
+          <button class="appointment__form-button button" type="submit">Отправить</button>
         </form>
       </section>
     </main>
@@ -171,17 +171,17 @@
           </label>
           <a class="modal-login__form-restore" href="restorepass.html" target="_blank">Я забыл пароль!</a>
         </p>
-        <button class="modal-login__form-submit" type="submit">Войти</button>
+        <button class="modal-login__form-submit button" type="submit">Войти</button>
       </form>
-      <button class="modal-close"></button>
+      <button class="modal-close" type="button"></button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <a class="modal-map__link" href="https://yandex.ru/maps" aria-label="Яндекс карты" target="_blank">
-        <img class="modal-map__img" src="img/map.jpg" width="766" height="560" alt="Карта">
-      </a>
-      <button class="modal-close"></button>
+      <p class="modal-map__pic">
+        <img class="modal-map__img" src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button"></button>
     </section>
 
     <p class="visibility-hidden">Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
