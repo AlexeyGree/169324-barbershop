@@ -15,31 +15,35 @@
         <a class="page-header__logo" aria-label="Логотип">
           <img class="page-header__img" src="img/index-logo.svg" width="368" height="204" alt="Логотип барбершопа &laquo;Borodinski&raquo;">
         </a>
-        <ul class="page-nav page-nav__main">
-          <li class="page-nav__item">
-            <a class="page-nav__link link" href="info.html">Информация</a>
-          </li>
-          <li class="page-nav__item">
-            <a class="page-nav__link link" href="news.html">Новости</a>
-          </li>
-          <li class="page-nav__item">
-            <a class="page-nav__link link" href="price.html">Прайс-лист</a>
-          </li>
-          <li class="page-nav__item">
-            <a class="page-nav__link link" href="catalog.html">Магазин</a>
-          </li>
-          <li class="page-nav__item">
-            <a class="page-nav__link link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-        <ul class="page-nav page-nav__user">
-          <li class="page-nav__item">
-            <a class="page-nav__link login-link link" href="login.html">Вход</a>
-          </li>
-        </ul>
+        <div class="page-nav__bg">
+          <div class="content-layout">
+            <ul class="page-nav page-nav__main">
+              <li class="page-nav__item">
+                <a class="page-nav__link link" href="info.html">Информация</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link link" href="news.html">Новости</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link link" href="price.html">Прайс-лист</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link link" href="catalog.html">Магазин</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <ul class="page-nav page-nav__user">
+              <li class="page-nav__item">
+                <a class="page-nav__link login-link link" href="login.html">Вход</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <main class="container">
+    <main class="content-layout">
 
       <h1 class="visually-hidden">Барбершоп &laquo;Borodinski&raquo;</h1>
 
@@ -132,30 +136,32 @@
       </div>
     </main>
     <footer class="page-footer">
-      <p class="page-footer__contacts">
-        Барбершоп &laquo;Borodinski&raquo;<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <a class="page-footer__link link" href="map.html">Как нас найти?</a><br>
-        Телефон: <a class="page-footer__phone-link link" href="tel:+78126660266" aria-label="Позвонить нам">+7 (812) 666-02-66</a>
-      </p>
-      <div class="page-footer__social">
-        <b class="page-footer__bold-text">Давайте дружить!</b>
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-button link" href="https://vk.com" aria-label="Вконтакте" target="_blank"></a>
-          </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-button link" href="https://facebook.com" aria-label="Фейсбук" target="_blank"></a>
-          </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-button link" href="https://instagram.com" aria-label="Инстаграм" target="_blank"></a>
-          </li>
-        </ul>
+      <div class="content-layout">
+        <p class="page-footer__contacts">
+          Барбершоп &laquo;Borodinski&raquo;<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a class="page-footer__link link" href="map.html">Как нас найти?</a><br>
+          Телефон: <a class="page-footer__phone-link link" href="tel:+78126660266" aria-label="Позвонить нам">+7 (812) 666-02-66</a>
+        </p>
+        <div class="page-footer__social">
+          <b class="page-footer__bold-text">Давайте дружить!</b>
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-button link" href="https://vk.com" aria-label="Вконтакте" target="_blank"></a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-button link" href="https://facebook.com" aria-label="Фейсбук" target="_blank"></a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-button link" href="https://instagram.com" aria-label="Инстаграм" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+        <p class="page-footer__copyright">
+          <b class="page-footer__bold-text">Разработано:</b>
+          <a class="page-footer__button button link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+        </p>
       </div>
-      <p class="page-footer__copyright">
-        <b class="page-footer__bold-text">Разработано:</b>
-        <a class="page-footer__button button link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
-      </p>
     </footer>
 
     <section class="modal modal-login">
